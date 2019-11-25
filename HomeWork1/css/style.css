@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: "Myriad Pro", sans-serif;
+    margin: 10px 0px;
+}
+a {
+    font-family: "Myriad Pro", sans-serif;
+    text-decoration: none;
+}
+h2 {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+h1 {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-left: 5px;
+}
+
+.header_menu {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 3px;
+}
+.header_menu-active {
+    margin-left: 25%;
+    height: 60px;
+}
+
+.header_button{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 30px;
+    border-bottom: 3px solid white;
+    height: 100%;
+}
+.header_button:hover {
+    border-bottom: 3px solid #5094f2;
+}
+.header_button_a:hover {
+    color: #5094f2;
+}
+.header_button_a {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(108, 108, 108);
+    line-height: 1.2;
+}
+
+.slider {
+    display: block;
+}
+.slayd_text {
+    margin-left: 20px;
+    color: white;
+}
+.ipad {
+    height: 436px;
+}
+.slayd_text_p {
+    font-size: 20px;
+    color: white;
+}
+.slayd_button {
+    display: flex;
+    background-color: #5094f2;
+    border: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 180px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.menu_center {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+.menu_center_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.menu_center_text_a {
+    margin-top: 10px;
+    font-size: 25px;
+    color: rgb(80, 148, 242);
+    line-height: 2.183;
+}
+.menu_center_text_p {
+    font-size: 17px;
+    color: rgb(144, 144, 144);
+    margin: 2px 0px;
+}
+.menu_centerB {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+.menu_centerB_card {
+    text-align: center;
+}
+.text_card {
+    font-size: 42px;
+    color: rgb(111, 113, 115);
+    margin-bottom: 80px;
+}
+.menu_centerB_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10%;
+}
+.menu_centerB_text_p {
+    font-size: 18px;
+    font-family: "SegoeWPN", sans-serif;
+    color: rgb(144, 144, 144);
+}
+.menu_centerB_text_p-active {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+footer {
+    border-top: 1px solid #e5e5e5;
+    font-size: 18px;
+    font-family: "SegoeWPN", sans-serif;
+    color: rgb(144, 144, 144);
+    text-align: center;
+    margin-top: 130px;
+    padding: 30px 0px;
+}
+
+
