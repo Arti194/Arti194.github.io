@@ -1,0 +1,94 @@
+header{
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3vh;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu__items{
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.667;
+  color: white;
+  text-decoration: none;
+  margin: 0px 2vw;
+}
+.menu__items:hover{
+  color: #061e37;
+}
+.SingUp {
+  background: transparent;
+  border: 1px solid white;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  line-height: 2.083;
+  color: white;
+  width: 80px;
+}
+.SingUp:hover {
+  cursor: pointer;
+}
+.SingUp:active {
+  color: #0cb7bf;
+  background-color: white;
+}
+.Box {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.Box__h1{
+  font-size: 55px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.182;
+}
+.Box__p{
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.944;
+}
+.Box__but{
+  margin-top: 3vh;
+  border-radius: 5px;
+  background-color: rgb(6, 30, 55);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  height: 55px;
+  border: none;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: white;
+}
+.Box__but:nth-child(2){
+  background-color: white;
+  color: rgb(6, 30, 55);
+  margin-left: 2vw;
+}
+.Box__but:hover {
+  cursor: pointer;
+}
+.Box__but:nth-child(1):active{
+  background-color: white;
+  color: rgb(6, 30, 55);
+}
+.Box__but:nth-child(2):active{
+  background-color: rgb(6, 30, 55);
+  color: white;
+}
