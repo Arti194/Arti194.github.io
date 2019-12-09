@@ -1,0 +1,68 @@
+.MenuCard {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5vh;
+  flex-wrap: wrap;
+}
+.BoxCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 0.5px solid white;
+}
+.BoxCard:hover {
+  border: 0.5px solid silver;
+  box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__a {
+  text-decoration: none;
+  font-size: 20.35px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(80, 148, 242);
+  line-height: 2.183;
+  margin-top: 20px;
+}
+.card__p {
+  font-size: 14.35px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(144, 144, 144);
+  line-height: 1.2;
+}
+.Info {
+  padding-bottom: 10vh;
+}
+.product {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10vh;
+  flex-wrap: wrap;
+}
+.basket {
+  text-align: center;
+}
+.basket__text {
+  margin-bottom: 4vh;
+  font-size: 42.35px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(111, 113, 115);
+  line-height: 1.049;
+}
+.ProductInfo {
+  padding-top: 3vh;
+}
+.ProductInfo__text {
+  font-size: 15.35px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(144, 144, 144);
+  line-height: 2.345;
+}
+.ProductInfo__text-active {
+  font-size: 25px;
+}

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Work 1</title>
     <link href="slick/slick.css" rel="stylesheet">
     <link href="slick/slick-theme.css" rel="stylesheet">
@@ -9,102 +11,124 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="header_menu">
-                <div>
-                    <img src="img/shape1.png">
-                </div>
+        <div class="container">
+            <div class="head">
                 <div class="logo">
-                    <h1>Prechu</h1>
+                    <div>
+                        <img id="logo__img" src="img/shape1.png">
+                    </div>
+                    <div>
+                        <h1 class="Prechu">Prechu</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="header_menu header_menu-active">
-                <div class="header_button">
-                    <a href="" class="header_button_a">Home</a>
+                <div class="menu">
+                    <div class="buttonMenu">
+                        <a href="" class="buttonMenu__text">Home</a>
+                    </div>
+                    <div class="buttonMenu">
+                        <a href="" class="buttonMenu__text">Products</a>
+                    </div>
+                    <div class="buttonMenu">
+                        <a href="" class="buttonMenu__text">Services</a>
+                    </div>
+                    <div class="buttonMenu">
+                        <a href="" class="buttonMenu__text">Contact</a>
+                    </div>
                 </div>
-                <div class="header_button">
-                    <a href="" class="header_button_a">Products</a>
-                </div>
-                <div class="header_button">
-                    <a href="" class="header_button_a">Services</a>
-                </div>
-                <div class="header_button">
-                    <a href="" class="header_button_a">Contact</a>
+                <div class="MenuMob">
+                    <img class="MenuMob__img" src="img/menu_mob.png" alt="menu_mob">
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="slider">
-            <div class="sl">
-                <div>
-                    <div>
-                        <img src="img/iphone.png">
+        <div class="main">
+            <div class="slider">
+                <div class="sl">
+                    <div class="slayd">
+                        <div class="slayd__img">
+                            <img id="iphone" src="img/iphone.png">
+                        </div>
+                        <div class="SlaydText">
+                            <h2 class="SlaydText__h">Lorem Ipsum is simply</h2>
+                            <p class="SlaydText__p">dummy text of the</p>
+                            <p class="SlaydText__p">printing & typesetting</p>
+                            <button type="submit" formtarget="_blank" class="SlaydButton">
+                                <img src="img/shape2.png">
+                                <p class="SlaydButton__p">Sing up now</p>
+                            </button>
+                        </div>
                     </div>
-                    <div class="slayd_text">
-                        <h2>Lorem Ipsum is simply</h2>
-                        <p class="slayd_text_p">dummy text of the</p>
-                        <p class="slayd_text_p">printing & typesetting</p>
-                        <button type="submit" formtarget="_blank" class="slayd_button"><img src="img/shape2.png"><p class="slayd_text_p">Sing up now</p></button>
+                    <div class="slayd slayd-active">
+                        <div class="slayd__img">
+                            <img class="img_size" src="img/ipad.png">
+                        </div>
+                        <div class="SlaydText">
+                            <h2 class="SlaydText__h">Lorem Ipsum is simply</h2>
+                            <p class="SlaydText__p">dummy text of the</p>
+                            <p class="SlaydText__p">printing & typesetting</p>
+                            <button type="submit" formtarget="_blank" class="SlaydButton">
+                                <img src="img/shape2.png">
+                                <p class="SlaydButton__p">Sing up now</p>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <img class="ipad" src="img/ipad.png">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="Info">
+                <div class="MenuCard">
+                    <div class="BoxCard">
+                        <img src="img/shape3.png">
+                        <div class="card">
+                            <a class="card__a" href="">Contrary to popular</a>
+                            <p class="card__p">lorem Ipsum is not simply random text.</p>
+                            <p class="card__p">It has roots in a piece</p>
+                        </div>
                     </div>
-                    <div class="slayd_text">
-                        <h2>Lorem Ipsum is simply</h2>
-                        <p class="slayd_text_p">dummy text of the</p>
-                        <p class="slayd_text_p">printing & typesetting</p>
-                        <button type="submit" class="slayd_button"><img src="img/shape2.png"><p class="slayd_text_p">Sing up now</p></button>
+                    <div class="BoxCard">
+                        <img src="img/shape6.png">
+                        <div class="card">
+                            <a class="card__a" href="">Contrary to popular</a>
+                            <p class="card__p">lorem Ipsum is not simply random text.</p>
+                            <p class="card__p">It has roots in a piece</p>
+                        </div>
+                    </div>
+                    <div class="BoxCard">
+                        <img src="img/shape5.png">
+                        <div class="card">
+                            <a class="card__a" href="">Contrary to popular</a>
+                            <p class="card__p">lorem Ipsum is not simply random text.</p>
+                            <p class="card__p">It has roots in a piece</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product">
+                    <div class="basket">
+                        <h1 class="basket__text">The Shopping cart</h1>
+                        <img src="img/cart.png" alt="cart">
+                    </div>
+                    <div class="ProductInfo">
+                        <p class="ProductInfo__text ProductInfo__text-active">Some Bullet text here</p>
+                        <p class="ProductInfo__text">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                        <p class="ProductInfo__text">Lorem Ipsum has been the industry's standard dummy text ever</p>
+                        <p class="ProductInfo__text">When an unknown printer took a galley of type and scrambled</p>
+                        <p class="ProductInfo__text">It to make a type specimen book. It has survived not only five centuries</p>
+                        <p class="ProductInfo__text">But also the leap into electronic typesetting,</p>
+                        <p class="ProductInfo__text">Remaining essentially unchanged. It was popularised</p>
+                        <p class="ProductInfo__text">The release of Letraset sheets containing Lorem Ipsum passages</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="menu_center">
-            <div class="menu_center_items">
-                <img src="img/shape3.png">
-                <a class="menu_center_text_a" href="">Contrary to popular</a>
-                <p class="menu_center_text_p">lorem Ipsum is not simply random text.</p>
-                <p class="menu_center_text_p">It has roots in a piece</p>
-            </div>
-            <div class="menu_center_items">
-                <img src="img/shape6.png">
-                <a class="menu_center_text_a" href="">Contrary to popular</a>
-                <p class="menu_center_text_p">lorem Ipsum is not simply random text.</p>
-                <p class="menu_center_text_p">It has roots in a piece</p>
-            </div>
-            <div class="menu_center_items">
-                <img src="img/shape5.png">
-                <a class="menu_center_text_a" href="">Contrary to popular</a>
-                <p class="menu_center_text_p">lorem Ipsum is not simply random text.</p>
-                <p class="menu_center_text_p">It has roots in a piece</p>
-            </div>
-        </div>
-
-        <div class="menu_centerB">
-            <div class="menu_centerB_card">
-                <h1 class="text_card">The Shopping cart</h1>
-                <img src="img/cart.png" alt="cart">
-            </div>
-            <div class="menu_centerB_text">
-                <p class="menu_centerB_text_p menu_centerB_text_p-active">Some Bullet text here</p>
-                <p class="menu_centerB_text_p">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                <p class="menu_centerB_text_p">Lorem Ipsum has been the industry's standard dummy text ever</p>
-                <p class="menu_centerB_text_p">When an unknown printer took a galley of type and scrambled</p>
-                <p class="menu_centerB_text_p">It to make a type specimen book. It has survived not only five centuries</p>
-                <p class="menu_centerB_text_p">But also the leap into electronic typesetting,</p>
-                <p class="menu_centerB_text_p">Remaining essentially unchanged. It was popularised</p>
-                <p class="menu_centerB_text_p">The release of Letraset sheets containing Lorem Ipsum passages</p>
-            </div>
-        </div>
-
     </main>
 
     <footer>
-        <p>Copyright © 2012-2013 cssauthor.com</p>
+        <p class="footer">Copyright © 2012-2013 cssauthor.com</p>
     </footer>
 
 

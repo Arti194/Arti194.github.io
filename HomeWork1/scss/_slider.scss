@@ -1,0 +1,48 @@
+.main{
+  background-image: url("../img/fon1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.slayd {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.SlaydText {
+  margin-left: 2vw;
+}
+.SlaydText__h {
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.049;
+}
+.SlaydText__p {
+  margin: 10px 0px;
+  font-size: 20px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(255, 255, 255);
+  line-height: 1.049;
+}
+.img_size {
+  max-height: 436px;
+}
+.SlaydButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  background-color: #5094f2;
+  padding: 5px 15px;
+  color: white;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.SlaydButton:hover {
+  cursor: pointer;
+}
+.SlaydButton__p {
+  margin: 0px 5px;
+}

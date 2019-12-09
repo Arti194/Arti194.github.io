@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+div{
+  //border: 1px solid black;
+}
+.container{
+  margin: 0px auto;
+  max-width: 1024px;
+}
+@import "head";
+@import "slider";
+@import "main";
+
+footer {
+  border: 1px solid #e5e5e5;
+  text-align: center;
+}
+.footer {
+  margin: 3vh auto;
+  font-size: 15.35px;
+  font-family: "SegoeWPN", sans-serif;
+  color: rgb(144, 144, 144);
+}
+@media screen and (max-width: 650px) {
+  .menu{
+    display: none;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .img_size {
+    max-width: 100%;
+  }
+  .MenuMob {
+    display: flex;
+    padding-right: 25px;
+    padding-top: 6px;
+    padding-left: 10px;
+  }
+  .MenuMob__img {
+    max-width: 50px;
+    max-height: 35px;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  #logo__img {
+    min-width: 40px;
+  }
+  .sl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .slider .sl .slayd {
+    height: 250px;
+  }
+  .slayd {
+    display: flex;
+    justify-content: space-around;
+  }
+  .slayd__img {
+    display: flex;
+    width: 30%;
+    margin-right: 3vw;
+  }
+  .BoxCard {
+    width: 100%;
+    border-bottom: 0.5px solid #cccccc;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card {
+    align-items: start;
+    margin-left: 5vw;
+  }
+  .card__a {
+    font-size: 40px;
+  }
+  .card__p {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,40 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 1vw;
+  margin-top: 2vh;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.Prechu {
+  font-max-size: 42.35px;
+  color: rgb(0, 0, 0);
+  font-family: "Myriad Pro", sans-serif;
+  line-height: 1.2;
+  margin-left: 5px;
+}
+.menu {
+  display: flex;
+}
+.buttonMenu {
+  margin: 0px 1vw;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid white;
+}
+.buttonMenu:hover {
+  border-bottom: 3px solid #5094f2;
+}
+.buttonMenu__text {
+  text-decoration: none;
+  font-size: 20.35px;
+  font-family: "Myriad Pro", sans-serif;
+  color: rgb(108, 108, 108);
+  line-height: 1.2;
+}
+.MenuMob {
+  display: none;
+}
