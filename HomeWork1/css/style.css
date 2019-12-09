@@ -17,7 +17,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  padding: 0px 1vw;
   margin-top: 2vh; }
 
 .logo {
@@ -195,7 +194,7 @@ img {
   line-height: 1.049; }
 
 .ProductInfo {
-  padding-top: 3vh; }
+  padding: 3vh 15px 0px 15px; }
 
 .ProductInfo__text {
   font-size: 15.35px;
@@ -256,7 +255,8 @@ footer {
             align-items: center; }
 
   .main .slider .sl .slayd {
-    height: 250px; }
+    height: 250px;
+    width: 100%; }
 
   .slayd {
     display: -webkit-box;
@@ -287,12 +287,15 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-left: 5vw; }
+    margin-left: 20px; }
 
   .card__a {
-    font-size: 40px; }
+    font-size: 30px; }
 
   .card__p {
-    font-size: 18px; } }
+    font-size: 16px; }
+
+  .BoxCard__img {
+    width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */

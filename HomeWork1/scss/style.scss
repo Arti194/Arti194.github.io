@@ -5,9 +5,6 @@
 img {
   max-width: 100%;
 }
-div{
-  //border: 1px solid black;
-}
 .container{
   margin: 0px auto;
   max-width: 1024px;
@@ -15,7 +12,6 @@ div{
 @import "head";
 @import "slider";
 @import "main";
-
 footer {
   border: 1px solid #e5e5e5;
   text-align: center;
@@ -59,6 +55,7 @@ footer {
   }
   .main .slider .sl .slayd {
     height: 250px;
+    width: 100%;
   }
   .slayd {
     display: flex;
@@ -77,12 +74,15 @@ footer {
   }
   .card {
     align-items: start;
-    margin-left: 5vw;
+    margin-left: 20px;
   }
   .card__a {
-    font-size: 40px;
+    font-size: 30px;
   }
   .card__p {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .BoxCard__img {
+    width: 30%;
   }
 }
