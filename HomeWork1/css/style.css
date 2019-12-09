@@ -220,7 +220,8 @@ footer {
     display: none; }
 
   .container {
-    max-width: 100%; }
+    max-width: 100%;
+    height: auto; }
 
   .img_size {
     max-width: 100%; }
@@ -290,12 +291,25 @@ footer {
     margin-left: 20px; }
 
   .card__a {
-    font-size: 30px; }
+    font-size: 38px;
+    line-height: 1.5;
+    margin-top: 10px; }
 
   .card__p {
-    font-size: 16px; }
+    font-size: 19px; }
 
   .BoxCard__img {
-    width: 30%; } }
+    width: 25%; }
+
+  body {
+    min-width: 480px; } }
+@media screen and (max-width: 480px) {
+  .card__a {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-top: 10px; }
+
+  .card__p {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
