@@ -303,7 +303,13 @@ footer {
     width: 25%; }
 
   body {
-    min-width: 480px; } }
+    min-width: 480px; }
+
+  .slick-next {
+    right: 8px; }
+
+  .slick-prev {
+    left: 5px; } }
 @media screen and (max-width: 480px) {
   .card__a {
     font-size: 25px;
