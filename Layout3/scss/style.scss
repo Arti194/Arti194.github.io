@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Boxs {
+  display: flex;
+  left: 30%;
+  top: 5%;
+  width: 800px;
+  height: 800px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+.box {
+  display: flex;
+  position: relative;
+  min-width: 400px;
+  height: 400px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+
+.box1 {
+  background-color: red;
+  z-index: 10;
+  left: 70px;
+  top: 40px;
+}
+.box2 {
+  background-color: lawngreen;
+  z-index: 11;
+  right: 70px;
+  top: 70px;
+}
+
+.box3 {
+  background-color: blue;
+  z-index: 12;
+  bottom: 100px;
+  left: 50px;
+}
+.box4 {
+  background-color: yellow;
+  z-index: 13;
+  bottom: 60px;
+  right: 50px;
+}
+
+.box_sphere {
+  display: flex;
+  border-radius: 90px;
+  width: 80px;
+  height: 80px;
+  background-color: #4f4f4f;
+  margin: 10px 10px;
+}
+
+.box:hover {
+  z-index: 20;
+}
+
+.box_sphere:before, .box_sphere:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 348px;
+  left: 319px;
+  width: 60px;
+  height: 5px;
+  background-color: #4f4f4f;
+}
+
+.box_sphere:after {
+  transform: rotate(90deg);
+}
+
+.box_sphere:hover:after, .box_sphere:hover:before {
+  background-color: black;
+}
+
+@media screen and (max-width: 650px){
+  .box1 {
+    z-index: 13;
+    left: 350px;
+    top: 300px;
+  }
+  .box2 {
+    z-index: 12;
+    right: 350px;
+    top: 270px;
+  }
+
+  .box3 {
+    z-index: 11;
+    bottom: 320px;
+    left: 320px;
+  }
+  .box4 {
+    z-index: 10;
+    bottom: 370px;
+    right: 320px;
+  }
+}
