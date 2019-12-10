@@ -79,7 +79,6 @@
     display: none;
     float: left;
 
-    height: 100%;
     min-height: 1px;
 }
 [dir='rtl'] .slick-slide
@@ -89,6 +88,7 @@
 .slick-slide img
 {
     display: block;
+    height: auto;
 }
 .slick-slide.slick-loading img
 {

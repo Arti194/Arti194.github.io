@@ -231,13 +231,13 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-right: 25px;
     padding-top: 6px;
     padding-left: 10px; }
 
   .MenuMob__img {
     max-width: 50px;
-    max-height: 35px; }
+    max-height: 35px;
+    margin-right: 25px; }
 
   .logo {
     margin-left: 20px; }
@@ -289,7 +289,8 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-left: 20px; }
+    margin-left: 20px;
+    min-width: 326px; }
 
   .card__a {
     font-size: 38px;
