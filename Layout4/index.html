@@ -2,31 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Layout4</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
-    <div class="center">
-        <div class="center_left">
-            <img src="img/logo.png" alt="logo" class="center_logo">
-            <img src="img/camera.png" alt="camera" class="center_img">
-            <img src="img/shadow.png" alt="shadow" class="shadow">
-            <div class="center_img_center center_img_center1">
+    <div class="Box">
+        <div class="BoxLeft">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <img src="img/camera.png" alt="camera" class="Camera">
+            <img src="img/shadow.png" alt="shadow" class="CameraShadow">
+            <div class="CameraPhotos CameraPhotos__top">
                 <img src="img/camera-top.png" alt="top">
             </div>
-            <div class="center_img_center center_img_center2">
+            <div class="CameraPhotos CameraPhotos__center">
                 <img src="img/camera-back.png" alt="right">
             </div>
-            <div class="center_img_center center_img_center3">
+            <div class="CameraPhotos CameraPhotos__bottom">
                 <img src="img/camera-right.png" alt="back">
             </div>
         </div>
-        <div class="center_right">
-            <div class="center_right_h">
+        <div class="BoxRight">
+            <div class="BoxRightHeader">
                 <h1>FUJIFILM X-T10</h1>
-                <p class="center_right_h_p">MIRRORLESS DIGITAL CAMERA</p>
+                <p class="BoxRightHeader__text">MIRRORLESS DIGITAL CAMERA</p>
             </div>
-            <div class="center_right_ul">
+            <div class="BoxRight__ul">
                 <p>FEATURES</p>
                 <ul>
                     <li>
@@ -46,28 +49,28 @@
                     </li>
                 </ul>
             </div>
-            <div class="center_right_menu">
-                <p class="center_right_menu_p">IN STOCK</p>
-                <p class="center_right_menu_p">FREE SHIPPING</p>
-                <p class="center_right_menu_p">REVIEWS</p>
+            <div class="BoxRightMenu">
+                <p class="BoxRightMenu__text">IN STOCK</p>
+                <p class="BoxRightMenu__text BoxRightMenu__text-active">FREE SHIPPING</p>
+                <p class="BoxRightMenu__text BoxRightMenu__text-active">REVIEWS</p>
             </div>
-            <div class="center_right_quantity">
+            <div class="Quantity">
                 <p>QUANTITY</p>
             </div>
-            <div class="center_right_count">
-                <button class="button_minmax"><p class="button_minmax_p">-</p></button>
-                <div class="center_right_count_b">
+            <div class="Count">
+                <button class="CountMinMax"><p class="CountMinMax__text">-</p></button>
+                <div class="CountNumber">
                     <p>1</p>
                 </div>
-                <button class="button_minmax"><p class="button_minmax_p">+</p></button>
+                <button class="CountMinMax"><p class="CountMinMax__text">+</p></button>
             </div>
-            <div class="center_right_summ">
+            <div class="Price">
                 <h1>$599</h1>
-                <p class="center_right_old">Old Price: $799</p>
+                <p class="Price__old">Old Price: $799</p>
             </div>
-            <div class="center_right_button">
-                <button class="button1"><p class="button1_text">Add to Cart</p></button>
-                <button class="button2"><p class="button2_text">Add to Wish List</p></button>
+            <div class="BoxRightButton">
+                <button class="AddtoCard"><p class="AddtoCard__text">Add to Cart</p></button>
+                <button class="AddtoWishList"><p class="AddtoWishList__text">Add to Wish List</p></button>
             </div>
         </div>
     </div>

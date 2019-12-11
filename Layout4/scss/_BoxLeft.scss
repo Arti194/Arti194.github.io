@@ -1,0 +1,56 @@
+.BoxLeft {
+  display: flex;
+  flex-direction: column;
+  background-color: #37b0ae;
+  width: 500px;
+  height: 630px;
+  position: relative;
+  flex-wrap: nowrap;
+}
+.CameraPhotos {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255, 0.4);
+  padding: 5px;
+  box-shadow: 0 0 5px;
+  width: 75px;
+  height: 78px;
+  z-index: 102;
+}
+.CameraPhotos:hover {
+  box-shadow: 0 0 5px #37b0ae;
+}
+.CameraPhotos__top {
+  position: absolute;
+  top: 200px;
+  left: 457px;
+}
+.CameraPhotos__center {
+  position: absolute;
+  top: 300px;
+  left: 457px;
+}
+.CameraPhotos__bottom {
+  position: absolute;
+  top: 400px;
+  left: 457px;
+}
+.logo {
+  width: 100px;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.Camera {
+  width: 500px;
+  position: relative;
+  top: 50px;
+  left: -50px;
+  z-index: 101;
+}
+.CameraShadow {
+  position: absolute;
+  width: 620px;
+  left: -50px;
+  top: 300px;
+  z-index: 100;
+}

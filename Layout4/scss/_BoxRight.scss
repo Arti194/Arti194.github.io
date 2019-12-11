@@ -1,0 +1,83 @@
+.BoxRight {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 700px;
+  background-color: white;
+  padding-left: 90px;
+}
+.BoxRightHeader {
+  margin-top: 50px;
+}
+.BoxRightHeader__text {
+  color: rgb(58, 77, 92);
+}
+.BoxRight__ul {
+  margin-top: 60px;
+}
+.BoxRightMenu {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.BoxRightMenu__text-active {
+  margin-left: 30px;
+}
+.Quantity {
+  margin-top: 30px;
+}
+.Count {
+  display: flex;
+  flex-direction: row;
+}
+.CountMinMax {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid rgb(124, 141, 156);
+}
+.CountNumber {
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 33px;
+  border: 1px solid rgb(124, 141, 156);
+}
+.CountMinMax__text{
+  margin: 0;
+}
+.Price {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.Price__old {
+  margin-left: 20px;
+}
+.BoxRightButton {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.AddtoCard {
+  background-color: #37b0ae;
+  border: none;
+  width: 180px;
+  height: 40px;
+}
+.AddtoCard__text {
+  margin-top: 0px;
+  color: white;
+}
+.AddtoWishList {
+  border: 1px solid rgb(124, 141, 156);
+  background: transparent;
+  width: 180px;
+  height: 40px;
+  margin-left: 30px;
+}
+.AddtoWishList__text {
+  margin-top: 0px;
+  color: rgb(124, 141, 156);
+}
