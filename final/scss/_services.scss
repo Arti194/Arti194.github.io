@@ -1,0 +1,55 @@
+.Services {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Services>div{
+  margin-top: 6%;
+  margin-bottom: 2%;
+  max-width: 520px;
+  text-align: center;
+}
+.Services>div>p:nth-child(1){
+  font-size: 45px;
+  font-family: "Raleway";
+  color: rgb(6, 30, 55);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.Services>div>p:nth-child(2){
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgb(176, 190, 197);
+  line-height: 1.667;
+}
+.ListServices {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.ListServices>div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
+  width: calc(800*100%/1440);
+  height: 50px;
+  position: relative;
+}
+.ListServices>div>img{
+  margin-left: 25px;
+}
+.ListServices>div>p{
+  margin-left: 30px;
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgb(6, 30, 55);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+

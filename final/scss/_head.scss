@@ -6,21 +6,23 @@ header{
 }
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .menu{
   display: flex;
+  margin-top: 10px;
+  margin-right: 9%;
   flex-wrap: wrap;
 }
-.menu__items{
+.menu>a{
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: bold;
   line-height: 1.667;
   color: white;
   text-decoration: none;
-  margin: 0px 2vw;
+  margin: 0px 25px;
 }
 .menu__items:hover{
   color: #061e37;
@@ -41,13 +43,16 @@ header{
   color: #0cb7bf;
   background-color: white;
 }
-.Box {
+.HeaderBottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
-.Box__h1{
+.HeaderBottom__text {
+  max-width: 570px;
+}
+.HeaderBottom__text>p:nth-child(1){
   font-size: 55px;
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
@@ -55,13 +60,13 @@ header{
   text-transform: uppercase;
   line-height: 1.182;
 }
-.Box__p{
+.HeaderBottom__text>p:nth-child(2){
   font-size: 18px;
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
   line-height: 1.944;
 }
-.Box__but{
+.BuyNow{
   margin-top: 3vh;
   border-radius: 5px;
   background-color: rgb(6, 30, 55);
@@ -76,19 +81,35 @@ header{
   line-height: 1.2;
   color: white;
 }
-.Box__but:nth-child(2){
+.TryForFree{
+  margin-top: 3vh;
+  border-radius: 5px;
   background-color: white;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  height: 55px;
+  border: none;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
   color: rgb(6, 30, 55);
   margin-left: 2vw;
 }
-.Box__but:hover {
+.BuyNow, .TryForFree:hover {
   cursor: pointer;
 }
-.Box__but:nth-child(1):active{
+.BuyNow:active{
   background-color: white;
   color: rgb(6, 30, 55);
 }
-.Box__but:nth-child(2):active{
+.TryForFree:active{
   background-color: rgb(6, 30, 55);
   color: white;
+}
+.Video {
+  width: 600px;
+  border: 1px solid black;
+  border-radius: 5px;
 }

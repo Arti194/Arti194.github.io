@@ -1,0 +1,40 @@
+.BoxButton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.BoxButton>div>div>img{
+  margin-right: 10px;
+}
+.BoxButton>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+}
+.BoxButton>div>div>p{
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.25;
+}
+.BoxButton>div:hover{
+  cursor: pointer;
+}
+.BoxButton>div:nth-child(1){
+  background-color: #80d8ff;
+}
+.BoxButton>div:nth-child(2){
+  background-color: #82b1ff;
+}
+.BoxButton>div:nth-child(3){
+  background-color: #b388ff;
+}
+.BoxButton>div:nth-child(4){
+  background-color: #ea80fc;
+}
+.Background {
+  background: linear-gradient(90deg, #80d8ff 50%, #ea80fc 50%);
+}
