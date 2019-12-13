@@ -28,22 +28,26 @@
   flex-direction: column;
   align-items: center;
 }
-.ListServices>div{
+.ListServices__item{
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
   margin: 10px auto;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
   width: calc(800*100%/1440);
-  height: 50px;
-  position: relative;
+  min-height: 50px;
 }
-.ListServices>div>img{
-  margin-left: 25px;
+.ListServices__item>div:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
 }
-.ListServices>div>p{
+.ListServices__item>div:nth-child(1)>div{
+  display: flex;
+  align-items: center;
+}
+.ListServices__item>div:nth-child(1)>div>p{
   margin-left: 30px;
   font-size: 15px;
   font-family: "Raleway";
@@ -52,4 +56,50 @@
   text-transform: uppercase;
   line-height: 1.2;
 }
-
+.content {
+  display: none ;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.content__text{
+  max-width: 470px;
+  margin-left: 15px;
+}
+.content__text>p{
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: rgb(6, 30, 55);
+  line-height: 1.667;
+}
+.ListServices__item:hover {
+  cursor: pointer;
+}
+.ButtonList {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  padding: 0px 20px;
+}
+.ButtonList:hover {
+  cursor: pointer;
+}
+.ButtonList>div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.ButtonList>div:nth-child(1)>p {
+  margin-left: 30px;
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgb(6, 30, 55);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}

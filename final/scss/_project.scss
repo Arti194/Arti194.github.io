@@ -56,7 +56,7 @@
 .TitleButton {
   text-align: center;
 }
-.GetStarted {
+.ProjectGetStarted {
   margin: 7% auto;
   width: 150px;
   height: 55px;
@@ -71,10 +71,10 @@
   text-transform: uppercase;
   line-height: 1.2;
 }
-.GetStarted:hover{
+.ProjectGetStarted:hover{
   cursor: pointer;
 }
-.GetStarted:active{
+.ProjectGetStarted:active{
   background-color: rgb(255, 255, 255);
   color: rgb(29, 233, 182);
 }

@@ -18,6 +18,7 @@
       <list>
         <option value="HTML File" />
         <option value="XSLT Stylesheet" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,6 +54,8 @@
       <workItem from="1575467473425" duration="6898000" />
       <workItem from="1575830327349" duration="12000" />
       <workItem from="1576177847419" duration="16676000" />
+      <workItem from="1576221634634" duration="8538000" />
+      <workItem from="1576249100474" duration="5338000" />
     </task>
     <servers />
   </component>
