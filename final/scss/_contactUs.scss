@@ -1,0 +1,112 @@
+.backgroundContactUp{
+  background-color: #fafafa;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.headerContacts{
+  text-align: center;
+  max-width: 600px;
+  margin: 0px auto;
+}
+.headerContacts>p:nth-child(1){
+  font-size: 45px;
+  font-family: "Raleway";
+  color: rgb(6, 30, 55);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.headerContacts>p:nth-child(2){
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgb(6, 30, 55);
+  line-height: 1.667;
+  margin-bottom: 50px;
+}
+.contactInfo {
+  display: flex;
+  width: 600px;
+  margin: 20px auto;
+  flex-direction: column;
+}
+.contactInfo__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.inputInfo {
+  border-width: 1px;
+  border-color: rgb(6, 30, 55);
+  border-style: solid;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Raleway";
+  color: rgb(6, 30, 55);
+  line-height: 2.143;
+  width: 250px;
+}
+.inputInfo::-webkit-input-placeholder {color: rgb(6, 30, 55);}
+.inputInfo-active{
+  width: 100%;
+  height: 150px;
+  text-align: start;
+}
+.contactInfo__button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgb(6, 30, 55);
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+}
+label:before {
+  content: " ";
+  display: inline-block;
+  margin-right: 10px;
+  font: 12px/12px Arial;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid rgb(6, 30, 55);
+  vertical-align: middle;
+  text-align: center;
+  border-image: initial;
+  text-indent: 0px;
+}
+input:checked + label:before {
+  content: "X";
+  color: rgb(6, 30, 55);
+}
+.buttonSend {
+  border-radius: 5px;
+  background-color: rgb(29, 233, 182);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  width: 130px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.875;
+}
+.buttonSend:hover {
+  cursor: pointer;
+}
+.buttonSend:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(29, 233, 182);
+}

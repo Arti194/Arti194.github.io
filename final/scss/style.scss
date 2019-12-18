@@ -2,15 +2,19 @@
   margin: 0;
   padding: 0;
 }
-button{
+button, input, textarea{
   outline: none;
 }
+
 @import "head";
 @import "project";
 @import "BoxButton";
 @import "services";
 @import "comments";
 @import "outTeam";
+@import "contactUs";
+@import "footer";
+
 img {
   max-width: 100%;
   height: auto;

@@ -10,17 +10,17 @@
   justify-content: space-between;
   height: 560px;
 }
-.HearedComment{
+.HeaderComment{
   max-width: 550px;
 }
-.HearedComment>p:nth-child(1){
+.HeaderComment>p:nth-child(1){
   font-size: 45px;
   font-family: "Raleway";
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.2;
 }
-.HearedComment>p:nth-child(2){
+.HeaderComment>p:nth-child(2){
   margin-top: 1vh;
   font-size: 15px;
   font-family: "Raleway";
@@ -28,7 +28,7 @@
   font-weight: bold;
   line-height: 1.667;
 }
-.HearedComment>button{
+.HeaderComment>button{
   margin-top: 8vh;
   border: none;
   border-radius: 5px;
@@ -43,10 +43,10 @@
   text-transform: uppercase;
   line-height: 1.2;
 }
-.HearedComment>button:hover {
+.HeaderComment>button:hover {
   cursor: pointer;
 }
-.HearedComment>button:active {
+.HeaderComment>button:active {
   background-color: rgb(255, 255, 255);
   color: rgb(6, 30, 55);;
 }

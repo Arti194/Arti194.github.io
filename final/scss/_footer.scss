@@ -1,0 +1,32 @@
+footer {
+  background-color: #061e37;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.menu-active {
+  margin-right: 0;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.menu-active>a:last-child{
+  margin-right: 0px;
+}
+.about>img{
+  margin: 0px 25px;
+}
+.about>a{
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgba(255, 255, 255, 0.502);
+  line-height: 1.667;
+  text-decoration: none;
+}
+.icons-active{
+  margin-top: 0;
+}
+.icons-active>div:last-child{
+  margin-right: 0px;
+}
+.icons>div>img:hover{
+  cursor: pointer;
+}

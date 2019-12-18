@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0; }
 
-button {
+button, input, textarea {
   outline: none; }
 
 header {
@@ -329,16 +329,13 @@ header {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
           box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
   width: calc(800*100%/1440);
-  min-height: 50px; }
+  max-height: 50px;
+  overflow: hidden;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s; }
 
-.ListServices__item > div:nth-child(1) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 20px 0px; }
+.ListServices__item-active {
+  max-height: 300px; }
 
 .ListServices__item > div:nth-child(1) > div {
   display: -webkit-box;
@@ -358,18 +355,20 @@ header {
   line-height: 1.2; }
 
 .content {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 20px;
   margin-left: 20px;
   margin-top: 20px; }
 
-.content__text {
+.content > div:nth-child(2) {
   max-width: 470px;
   margin-left: 15px; }
 
-.content__text > p {
+.content > div:nth-child(2) > p {
   font-size: 15px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -379,24 +378,20 @@ header {
 .ListServices__item:hover {
   cursor: pointer; }
 
-.ButtonList {
+.headerItem {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: white;
-  border-radius: 5px;
-  width: 100%;
-  min-height: 50px;
-  border: none;
-  padding: 0px 20px; }
+  min-height: 50px; }
 
-.ButtonList:hover {
+.headerItem:hover {
   cursor: pointer; }
 
-.ButtonList > div:nth-child(1) {
+.headerItem > div:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,7 +399,7 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
-.ButtonList > div:nth-child(1) > p {
+.headerItem > div:nth-child(1) > p {
   margin-left: 30px;
   font-size: 15px;
   font-family: "Raleway";
@@ -431,17 +426,17 @@ header {
           justify-content: space-between;
   height: 560px; }
 
-.HearedComment {
+.HeaderComment {
   max-width: 550px; }
 
-.HearedComment > p:nth-child(1) {
+.HeaderComment > p:nth-child(1) {
   font-size: 45px;
   font-family: "Raleway";
   color: white;
   font-weight: bold;
   line-height: 1.2; }
 
-.HearedComment > p:nth-child(2) {
+.HeaderComment > p:nth-child(2) {
   margin-top: 1vh;
   font-size: 15px;
   font-family: "Raleway";
@@ -449,7 +444,7 @@ header {
   font-weight: bold;
   line-height: 1.667; }
 
-.HearedComment > button {
+.HeaderComment > button {
   margin-top: 8vh;
   border: none;
   border-radius: 5px;
@@ -465,10 +460,10 @@ header {
   text-transform: uppercase;
   line-height: 1.2; }
 
-.HearedComment > button:hover {
+.HeaderComment > button:hover {
   cursor: pointer; }
 
-.HearedComment > button:active {
+.HeaderComment > button:active {
   background-color: white;
   color: #061e37; }
 
@@ -536,8 +531,239 @@ header {
 .KeySlider {
   margin-left: 100px; }
 
-.OutTeam {
-  height: 500px; }
+.HeaderTeam {
+  text-align: center;
+  max-width: 600px;
+  margin: 70px auto; }
+
+.HeaderTeam > p:nth-child(1) {
+  font-size: 45px;
+  font-family: "Raleway";
+  color: #061e37;
+  font-weight: bold;
+  line-height: 1.2; }
+
+.HeaderTeam > p:nth-child(2) {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: #b0bec5;
+  line-height: 1.667; }
+
+.avatars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.avatars > div {
+  margin: 0px 15px; }
+
+.InfoAvatar {
+  text-align: center;
+  max-width: 650px;
+  margin: 20px auto; }
+
+.InfoAvatar > p:nth-child(1) {
+  font-size: 18px;
+  font-family: "Raleway";
+  color: #061e37;
+  font-weight: bold;
+  line-height: 1.389; }
+
+.InfoAvatar > p:nth-child(2) {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: #90a4ae;
+  line-height: 1.667; }
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px; }
+
+.icons > div {
+  margin: 0px 15px; }
+
+.backgroundContactUp {
+  background-color: #fafafa;
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 70px; }
+
+.headerContacts {
+  text-align: center;
+  max-width: 600px;
+  margin: 0px auto; }
+
+.headerContacts > p:nth-child(1) {
+  font-size: 45px;
+  font-family: "Raleway";
+  color: #061e37;
+  font-weight: bold;
+  line-height: 1.2; }
+
+.headerContacts > p:nth-child(2) {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Raleway";
+  color: #061e37;
+  line-height: 1.667;
+  margin-bottom: 50px; }
+
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  margin: 20px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.contactInfo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px; }
+
+.inputInfo {
+  border-width: 1px;
+  border-color: #061e37;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 14px;
+  font-family: "Raleway";
+  color: #061e37;
+  line-height: 2.143;
+  width: 250px; }
+
+.inputInfo::-webkit-input-placeholder {
+  color: #061e37; }
+
+.inputInfo-active {
+  width: 100%;
+  height: 150px;
+  text-align: start; }
+
+.contactInfo__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+input[type="checkbox"] {
+  display: none; }
+
+label {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: #061e37;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+label:before {
+  content: " ";
+  display: inline-block;
+  margin-right: 10px;
+  font: 12px/12px Arial;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid #061e37;
+  vertical-align: middle;
+  text-align: center;
+  -o-border-image: initial;
+     border-image: initial;
+  text-indent: 0px; }
+
+input:checked + label:before {
+  content: "X";
+  color: #061e37; }
+
+.buttonSend {
+  border-radius: 5px;
+  background-color: #1de9b6;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  width: 130px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  font-family: "Raleway";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.875; }
+
+.buttonSend:hover {
+  cursor: pointer; }
+
+.buttonSend:active {
+  background-color: white;
+  color: #1de9b6; }
+
+footer {
+  background-color: #061e37;
+  padding-top: 100px;
+  padding-bottom: 30px; }
+
+.menu-active {
+  margin-right: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px; }
+
+.menu-active > a:last-child {
+  margin-right: 0px; }
+
+.about > img {
+  margin: 0px 25px; }
+
+.about > a {
+  font-size: 15px;
+  font-family: "Raleway";
+  color: rgba(255, 255, 255, 0.502);
+  line-height: 1.667;
+  text-decoration: none; }
+
+.icons-active {
+  margin-top: 0; }
+
+.icons-active > div:last-child {
+  margin-right: 0px; }
+
+.icons > div > img:hover {
+  cursor: pointer; }
 
 img {
   max-width: 100%;
